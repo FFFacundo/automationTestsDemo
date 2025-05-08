@@ -1,6 +1,6 @@
-package com.saucedemo.base.tests;
+package com.saucedemo.tests;
 
-import com.saucedemo.base.base.BaseTest;
+import com.saucedemo.base.BaseTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
