@@ -1,11 +1,13 @@
 package com.demoqa.base;
 
 import com.demoqa.pages.HomePage;
-import com.saucedemo.pages.BasePage;
+import com.base.BasePage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import static utilities.Utility.setUtilityDriver;
 
 public class BaseTest   {
 
@@ -23,8 +25,9 @@ public class BaseTest   {
         basePage = new BasePage();
         basePage.setDriver(driver);
 
-        homePage = new HomePage();
+        setUtilityDriver();
 
+        homePage = new HomePage();
     }
 
     @AfterEach
