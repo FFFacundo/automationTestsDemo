@@ -12,7 +12,7 @@ public class RadioButtonTest extends BaseTest {
         PracticeFormPage practiceFormPage = homePage.goToFormsPage().clickPracticeForm();
         practiceFormPage.clickOtherRadioButton();
 
-        Assertions.assertTrue(practiceFormPage.isOtherRadioButtonSelected(),"\nOther radio button is not selected :<\n");
+        Assertions.assertTrue(practiceFormPage.isOtherRadioButtonSelected(),"\n\nOther radio button is not selected \n\n");
     }
 
 }

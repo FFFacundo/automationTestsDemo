@@ -47,5 +47,8 @@ public class PracticeFormPage extends FormsPage {
             clickJs(readingHobbyCheckbox);
         }
     }
+    public boolean isReadingChecked(){
+        return find(readingHobbyCheckbox).isSelected();
+    }
 
 }
